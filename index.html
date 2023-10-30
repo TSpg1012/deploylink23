@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BasketFavoriteDetailPage</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h2 class="allproducts">All Products</h2>
+      <p class="Men">Man</p>
+      <p class="Women">Woman</p>
+      <p class="Accessories">Accessories</p>
+      <p class="Electronics">Electronics</p>
+      <div class="filter">
+        <select id="filterSelect">
+          <option value="default" class="defaultfilter">Filter</option>
+          <option value="lowestPrice" class="lowestPrice">
+            From lowest price
+          </option>
+          <option value="highestPrice" class="highestPrice">
+            From highest price
+          </option>
+          <option value="lowestRating" class="lowestRating">
+            From lowest rating
+          </option>
+          <option value="highestRating" class="highestRating">
+            From highest rating
+          </option>
+        </select>
+      </div>
+    </header>
+    <div class="container">
+      <!-- leftbox  -->
+      <div class="leftBox">
+        <!-- <div class="wrapper">
+          <div class="img-wrapper">
+            <img
+              src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+              alt=""
+            />
+          </div>
+          <div class="info">
+            <p>name</p>
+            <p>10.89</p>
+          </div>
+          <div class="buttons">
+            <button type="button" class="btn btn-primary basketbtn">
+              <i class="fa-solid fa-cart-plus"></i> Add to Basket
+            </button>
+            <button type="button" class="btn btn-warning favouritebtn">
+              i
+            </button>
+            <button class="details">Details</button>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- rightBox -->
+      <div class="rightBox">
+        <div class="basket">
+          <div class="title">
+            <i class="fa-solid fa-cart-plus"></i>
+            <h2>Basket</h2>
+          </div>
+          <div class="basketList">
+            <!-- <div class="basketItem">
+              <div class="img">
+                <img
+                  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="texts">
+                <p>my balls</p>
+                <p>my dicks</p>
+              </div>
+              <div class="deletebtn">
+                <i class="fa-regular fa-trash-can" style="color: #fff"></i>
+              </div>
+            </div> -->
+          </div>
+          <div>
+            <p class="sum">Total Price:<span class="totalbasket">0</span></p>
+          </div>
+        </div>
+        <div class="favourite">
+          <div class="title">
+            <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+            <h2>Favourite</h2>
+          </div>
+          <div class="favouriteList"></div>
+          <div>
+            <p class="sum">Total Price:<span class="totalfavourite">0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- . -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
